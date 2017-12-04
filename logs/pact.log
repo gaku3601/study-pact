@@ -1,0 +1,53 @@
+I, [2017-12-05T06:54:42.892746 #27118]  INFO -- : Registered expected interaction GET /foobar
+D, [2017-12-05T06:54:42.892972 #27118] DEBUG -- : {
+  "description": "A request to get foo",
+  "providerState": "User foo exists",
+  "request": {
+    "method": "GET",
+    "path": "/foobar",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "s": "foo"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "lastName": "bar"
+    }
+  }
+}
+I, [2017-12-05T06:54:42.895460 #27118]  INFO -- : Received request GET /foobar
+D, [2017-12-05T06:54:42.895553 #27118] DEBUG -- : {
+  "path": "/foobar",
+  "query": "",
+  "method": "get",
+  "body": {
+    "s": "foo"
+  },
+  "headers": {
+    "Content-Length": "11",
+    "Content-Type": "application/json",
+    "Host": "localhost:50755",
+    "User-Agent": "Go-http-client/1.1",
+    "Accept-Encoding": "gzip",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2017-12-05T06:54:42.895828 #27118]  INFO -- : Found matching response for GET /foobar
+D, [2017-12-05T06:54:42.895886 #27118] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "lastName": "bar"
+  }
+}
+I, [2017-12-05T06:54:42.899166 #27118]  INFO -- : Verifying - interactions matched
+I, [2017-12-05T06:54:42.901402 #27118]  INFO -- : Cleared interactions

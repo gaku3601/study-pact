@@ -1,0 +1,6 @@
+hash: d30e1efa02fcb105581841dc5a6a24ffbbbb7e9fc1fd0c787916feb4b4557743
+updated: 2017-12-05T06:52:36.787006123+09:00
+imports:
+- name: github.com/pact-foundation/pact-go
+  version: a76b6139127a54a29823419ea1b8daa3b55597a4
+testImports: []

@@ -1,0 +1,38 @@
+{
+  "consumer": {
+    "name": "MyConsumer"
+  },
+  "provider": {
+    "name": "MyProvider"
+  },
+  "interactions": [
+    {
+      "description": "A request to get foo",
+      "providerState": "User foo exists",
+      "request": {
+        "method": "GET",
+        "path": "/foobar",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "s": "foo"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "lastName": "bar"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

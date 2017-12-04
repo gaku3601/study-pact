@@ -1,0 +1,4 @@
+package: github.com/gaku3601/study-pact
+import:
+- package: github.com/pact-foundation/pact-go
+  version: ^0.0.11
